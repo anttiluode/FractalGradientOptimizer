@@ -3,7 +3,8 @@
 
 ## Abstract
 
-We introduce a novel optimizer based on continuous injection of 1/f^β fractal noise into gradient descent dynamics. Inspired by natural systems that exploit scale-free fluctuations, our method augments parameter updates with temporally correlated noise to escape plateaus and local minima.
+We introduce a novel optimizer based on continuous injection of 1/f^β fractal noise into gradient descent dynamics. Inspired by natural systems that exploit scale-free fluctuations, 
+our method augments parameter updates with temporally correlated noise to escape plateaus and local minima.
 
 ## Method
 
