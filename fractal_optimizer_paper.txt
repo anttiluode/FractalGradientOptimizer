@@ -1,0 +1,29 @@
+
+# Fractal Gradient Coupling: A Scale-Invariant Optimization Approach
+
+## Abstract
+
+We introduce a novel optimizer based on continuous injection of 1/f^β fractal noise into gradient descent dynamics. Inspired by natural systems that exploit scale-free fluctuations, our method augments parameter updates with temporally correlated noise to escape plateaus and local minima.
+
+## Method
+
+Each gradient step is modified as:
+Δθ = -α ∇L + η(t)
+where η(t) ~ 1/f^β noise, with β≈1.8.
+
+This produces self-similar exploration patterns during training.
+
+## Results
+
+Three tasks were evaluated:
+- **Large classification task**: Adam outperformed fractal optimizer
+- **California housing**: Comparable results, slightly favoring Adam
+- **Complex regression**: Fractal optimizer surpassed Adam by 2.7%
+
+## Conclusion
+
+Fractal noise coupling introduces scale-invariant dynamics that may be particularly beneficial in high-dimensional nonlinear landscapes. Future work includes combining with instanton dynamics and tuning β and coupling strength adaptively.
+
+## License
+
+MIT License
